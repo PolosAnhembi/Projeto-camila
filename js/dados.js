@@ -70,7 +70,7 @@ const handleSubmit = (e) => {
   const curso = document.getElementById("curso").value;
   const conheceu = document.getElementById("conheceu").value;
 
-  fetch("https://api.sheetmonkey.io/form/rAg3XsMteTaszbKMZyhd5e", {
+  fetch("https://api.sheetmonkey.io/form/wqpSmGvmNLAN69BgbogpqR", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -89,6 +89,13 @@ const handleSubmit = (e) => {
   })
     .then(() => removeLoading())
     .then(alert("Dados salvos com sucesso!"))
+    .then(
+      name = '',
+      idade = '',
+      email = '',
+      tel = '',
+      ensino_medio = '',
+      );
 };
 
 document.querySelector("#dados_Aluno").addEventListener("submit", handleSubmit);
