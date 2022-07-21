@@ -89,13 +89,6 @@ const handleSubmit = (e) => {
   })
     .then(() => removeLoading())
     .then(alert("Dados salvos com sucesso!"))
-    .then(
-      name = '',
-      idade = '',
-      email = '',
-      tel = '',
-      ensino_medio = '',
-      );
 };
 
 document.querySelector("#dados_Aluno").addEventListener("submit", handleSubmit);
