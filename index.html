@@ -15,20 +15,6 @@
       sizes="180x180"
       href="assets/favicon/apple-touch-icon.png"
     />
-    
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
-    />
-    
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicon/android-chrome-192x192.png"
-    />
 
     <link
       rel="icon"
@@ -43,20 +29,17 @@
       href="assets/favicon/favicon-16x16.png"
     />
 
-    
-
-    
-
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1ba196">
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -121,6 +104,15 @@
 
         <select name="Cursos" id="curso">
           <option disabled selected>Curso(selecione o grau)</option>
+        </select>
+
+        <select name="Conheceu via" id="conheceu" required>
+          <option disabled selected>Por onde nos conheceu</option>
+          <option value="Ação">Acão Empresa</option>
+          <option value="Panfleto">Panfleto</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Indicação">Indicação</option>
         </select>
 
         <button id="enviar" type="submit">Enviar</button>

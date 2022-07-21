@@ -68,6 +68,7 @@ const handleSubmit = (e) => {
   const ensino_medio = document.getElementById("conclusao").value;
   const interesse = document.getElementById("interesse").value;
   const curso = document.getElementById("curso").value;
+  const conheceu = document.getElementById("conheceu").value;
 
   fetch("https://api.sheetmonkey.io/form/v8RYW1Ccqu4YTLyaYvZwCn", {
     method: "POST",
@@ -82,7 +83,8 @@ const handleSubmit = (e) => {
       Concluiu: ensino_medio,
       Grau: interesse,
       Curso: curso,
-      data: "x-sheetmonkey-current-date",
+      Conheceu: conheceu,
+      Data: "x-sheetmonkey-current-date",
     }),
   })
     .then(() => removeLoading())
