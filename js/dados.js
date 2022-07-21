@@ -70,7 +70,7 @@ const handleSubmit = (e) => {
   const curso = document.getElementById("curso").value;
   const conheceu = document.getElementById("conheceu").value;
 
-  fetch("https://api.sheetmonkey.io/form/v8RYW1Ccqu4YTLyaYvZwCn", {
+  fetch("https://api.sheetmonkey.io/form/rAg3XsMteTaszbKMZyhd5e", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
