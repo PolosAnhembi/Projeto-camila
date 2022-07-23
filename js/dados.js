@@ -84,18 +84,19 @@ const handleSubmit = (e) => {
       Grau: interesse,
       Curso: curso,
       Conheceu: conheceu,
+      Fonte: "UAM",
       Data: "x-sheetmonkey-current-date",
     }),
   })
     .then(() => removeLoading())
     .then(alert("Dados salvos com sucesso!"))
     .then(
-      name = '',
-      idade = '',
-      email = '',
-      tel = '',
-      ensino_medio = '',
-      );
+      (name = ""),
+      (idade = ""),
+      (email = ""),
+      (tel = ""),
+      (ensino_medio = "")
+    );
 };
 
 document.querySelector("#dados_Aluno").addEventListener("submit", handleSubmit);
