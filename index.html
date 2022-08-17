@@ -44,80 +44,97 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="candidatos">
-      <form id="dados_Aluno">
-        <div class="logo">
-          <img src="assets/ANHEMBI.svg" alt="" class="anhembi mini_logos" />
+    <div class="wrapper">
+      <main class="candidatos">
+        <form id="dados_Aluno">
+          <div class="logo">
+            <img src="assets/ANHEMBI.svg" alt="" class="anhembi mini_logos" />
 
-          <img
-            src="assets/logo-anima.svg"
-            alt="anima-ecossistema"
-            class="anima mini_logos"
+            <img
+              src="assets/logo-anima.svg"
+              alt="anima-ecossistema"
+              class="anima mini_logos"
+            />
+          </div>
+
+          <div class="logo-principal">
+            <img
+              src="assets/anhembi-logo.svg"
+              alt="Anhembi"
+              class="anhembi_logo logos"
+            />
+          </div>
+          <input
+            type="text"
+            name="Nome"
+            id="nome"
+            placeholder="Nome completo"
           />
-        </div>
 
-        <div class="logo-principal">
-          <img
-            src="assets/anhembi-logo.svg"
-            alt="Anhembi"
-            class="anhembi_logo logos"
+          <input
+            type="number"
+            name="idade"
+            max="100"
+            min="0"
+            id="idade"
+            placeholder="Idade"
           />
-        </div>
-        <input type="text" name="Nome" id="nome" placeholder="Nome completo" />
 
-        <input
-          type="number"
-          name="idade"
-          max="100"
-          min="0"
-          id="idade"
-          placeholder="Idade"
-        />
+          <input type="email" name="Email" id="email" placeholder="Email" />
 
-        <input type="email" name="Email" id="email" placeholder="Email" />
+          <input
+            type="text"
+            name="Telefone"
+            id="telInput"
+            placeholder="Celular para contato"
+            maxlength="11"
+            oninput="mask('tel')"
+            required
+          />
 
-        <input
-          type="text"
-          name="Telefone"
-          id="telInput"
-          placeholder="Celular para contato"
-          maxlength="11"
-          oninput="mask('tel')"
-          required
-        />
+          <input
+            min="1940"
+            max="2030"
+            type="number"
+            name="Ensino_medio"
+            id="conclusao"
+            placeholder="Ano de conclusão do ensino médio"
+            checked
+          />
 
-        <input
-          min="1940"
-          max="2030"
-          type="number"
-          name="Ensino_medio"
-          id="conclusao"
-          placeholder="Ano de conclusão do ensino médio"
-          checked
-        />
+          <select name="Grau" id="interesse" required>
+            <option disabled selected>Grau de interesse</option>
+            <option value="grad">Graduação</option>
+            <option value="pos">Pós-Graduação</option>
+          </select>
 
-        <select name="Grau" id="interesse" required>
-          <option disabled selected>Grau de interesse</option>
-          <option value="grad">Graduação</option>
-          <option value="pos">Pós-Graduação</option>
-        </select>
+          <select name="Cursos" id="curso">
+            <option disabled selected>Curso(selecione o grau)</option>
+          </select>
 
-        <select name="Cursos" id="curso">
-          <option disabled selected>Curso(selecione o grau)</option>
-        </select>
+          <select name="Conheceu via" id="conheceu" required>
+            <option disabled selected>Por onde nos conheceu</option>
+            <option value="Ação">Acão Empresa</option>
+            <option value="Panfleto">Panfleto</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Indicação">Indicação</option>
+          </select>
 
-        <select name="Conheceu via" id="conheceu" required>
-          <option disabled selected>Por onde nos conheceu</option>
-          <option value="Ação">Acão Empresa</option>
-          <option value="Panfleto">Panfleto</option>
-          <option value="Facebook">Facebook</option>
-          <option value="Instagram">Instagram</option>
-          <option value="Indicação">Indicação</option>
-        </select>
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+      </main>
 
-        <button id="enviar" type="submit">Enviar</button>
-      </form>
-    </main>
+      <div class="whatsapp">
+        <a
+          href="https://wa.me/5511998983626?text=Formulário,%20meu%20curso%20gratuito!"
+          target="_blank"
+          title="TWhatsapp"
+          class="whatsapp_btn"
+          ><img src="assets/whatsapp-logo-1_adobe_express.svg" alt="Whatsapp"
+        /></a>
+      </div>
+    </div>
 
     <script src="js/dados.js" async defer></script>
     <script src="js/mask.js" async defer></script>
