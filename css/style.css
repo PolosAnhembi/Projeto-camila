@@ -130,6 +130,8 @@ button {
   color: white;
   cursor: pointer;
   margin: 0 10px;
+  width: 100px;
+  height: 50px;
 }
 
 button:hover {
@@ -142,11 +144,18 @@ button:active {
   transform: scale(0.98);
 }
 
+/* Form Footer */
+#form_footer {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /*Whatsapp Redirect*/
 .whatsapp {
   width: 100px;
-  position: absolute;
-  align-self: flex-end;
   bottom: 0;
   margin: 0 10px 10px 0;
   z-index: 50;
@@ -189,7 +198,7 @@ button:active {
   }
 
   .whatsapp {
-    width: 15%;
+    width: 50%;
     margin: 0 10px 5px 0;
   }
 }
