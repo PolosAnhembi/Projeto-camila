@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Candidatos</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1ba196" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Cadastro para curso livre</h1>
+
+      <main class="candidatos">
+        <form id="dados_Aluno">
+          <div class="logo">
+            <img src="assets/ANHEMBI.svg" alt="" class="anhembi mini_logos" />
+
+            <img
+              src="assets/logo-anima.svg"
+              alt="anima-ecossistema"
+              class="anima mini_logos"
+            />
+          </div>
+
+          <div class="logo-principal">
+            <img
+              src="assets/anhembi-logo.svg"
+              alt="Anhembi"
+              class="anhembi_logo logos"
+            />
+          </div>
+          <input
+            type="text"
+            name="Nome"
+            id="nome"
+            placeholder="Nome completo"
+          />
+
+          <input
+            type="number"
+            name="idade"
+            max="100"
+            min="0"
+            id="idade"
+            placeholder="Idade"
+          />
+
+          <input type="email" name="Email" id="email" placeholder="Email" />
+
+          <input
+            type="text"
+            name="Telefone"
+            id="telInput"
+            placeholder="Celular para contato"
+            maxlength="11"
+            oninput="mask('tel')"
+            required
+          />
+
+          <input
+            min="1940"
+            max="2030"
+            type="number"
+            name="Ensino_medio"
+            id="conclusao"
+            placeholder="Ano de conclusão do ensino médio"
+            checked
+          />
+
+          <label for="grau" class="full_cursos"
+            >Além do curso livre Você tem interesse em algum dos cursos citados
+            abaixo:</label
+          >
+          <select name="Grau" id="interesse" required>
+            <option disabled selected>Grau de interesse</option>
+            <option value="grad">Graduação</option>
+            <option value="pos">Pós-Graduação</option>
+          </select>
+
+          <select name="Cursos" id="curso">
+            <option disabled selected>Curso(selecione o grau)</option>
+          </select>
+
+          <select name="Conheceu via" id="conheceu" required>
+            <option disabled selected>Por onde nos conheceu</option>
+            <option value="Ação">Acão Empresa</option>
+            <option value="Panfleto">Panfleto</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Indicação">Indicação</option>
+          </select>
+
+          <div id="form_footer">
+            <button id="enviar" type="submit">Enviar</button>
+
+            <a
+              href="https://wa.me/5511998983626?text=Formulário,%20meu%20curso%20gratuito!"
+              target="_blank"
+              title="TWhatsapp"
+              class="whatsapp"
+              ><img
+                src="assets/whatsapp-logo-1_adobe_express.svg"
+                alt="Whatsapp"
+            /></a>
+          </div>
+        </form>
+      </main>
+
+    <script src="js/dados.js" async defer></script>
+    <script src="js/mask.js" async defer></script>
+  </body>
+</html>
