@@ -58,7 +58,7 @@ body {
 
 .mini_logos {
   width: 261.8px;
-  margin: 20px 40px;
+  margin: 5px 40px;
 }
 
 .anima {
@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 80vw;
-  height: 80vh;
+  height: 90vh;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
@@ -96,6 +96,7 @@ input {
   border: none;
   font-size: 1.0625rem;
   border-bottom: 0.125rem solid rgb(29, 176, 163);
+  margin-top: 20px;
   background-color: transparent;
   color: white;
   width: 30%;
@@ -143,9 +144,9 @@ button {
   background-color: #1d988e;
   color: white;
   cursor: pointer;
-  margin: 0 10px;
   width: 100px;
   height: 50px;
+  margin: 0 10px;
 }
 
 button:hover {
@@ -161,19 +162,30 @@ button:active {
 /* Form Footer */
 #form_footer {
   display: flex;
-  width: 60%;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 }
 
 /*Whatsapp Redirect*/
+.whatsapp_btn {
+  text-align: center;
+}
+
 .whatsapp {
-  width: 100px;
-  bottom: 0;
-  margin: 0 10px 10px 0;
+  display: flex;
+  flex-direction: row;
   z-index: 50;
+}
+
+.whatsapp_img {
+  width: 30%;
   transform: rotateY(150deg);
+  margin-left: -30%;
+}
+
+.whatsapp_btn a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 /* Fim */
@@ -183,6 +195,7 @@ button:active {
 @media screen and (max-width: 912px) {
   .title {
     font-size: 24px;
+    margin-top: 5%;
   }
 
   .full_cursos {
@@ -206,7 +219,7 @@ button:active {
     width: 100%;
   }
 
-    .mini_logos {
+  .mini_logos {
     width: 44.4%;
     margin: 2% 4%;
   }
@@ -229,7 +242,6 @@ button:active {
   }
 
   .whatsapp {
-    width: 40%;
     margin: 0 10px 5px 0;
   }
 }
