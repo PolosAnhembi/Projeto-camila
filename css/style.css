@@ -251,6 +251,10 @@ button:active {
     text-align: center;
   }
 
+  .whatsapp_btn a {
+    margin-left: -80px;
+  }
+
   .whatsapp_img  {
     margin-left: 0%;
   }
