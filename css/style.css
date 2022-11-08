@@ -256,11 +256,11 @@ button:active {
   }
 
   .whatsapp_btn a {
-    margin-left: -5px;
+    margin-left: 0px;
   }
 
   .textWhatsapp {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .whatsapp_img  {
