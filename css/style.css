@@ -197,6 +197,10 @@ button:active {
     font-size: 24px;
     margin-top: 5%;
   }
+  
+  #dados_Aluno {
+    height: 80%;
+  }
 
   .full_cursos {
     width: 80%;
