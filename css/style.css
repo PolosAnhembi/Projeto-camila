@@ -244,6 +244,16 @@ button:active {
   .whatsapp {
     margin: 0 10px 5px 0;
   }
+
+  .whatsapp_btn {
+    padding: 10px 2px;
+    width: 200px;
+    text-align: center;
+  }
+
+  .whatsapp_img  {
+    margin-left: 0%;
+  }
 }
 
 /* Fim Responsividade */
